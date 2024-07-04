@@ -1,36 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Content Assistant</title>
-    <!-- You can add more metadata and links to CSS files here -->
-</head>
-<body>
-    <!-- Content of your webpage -->
-    <!-- <div id="chatbot"> -->
-        <!-- The chatbot will render inside this div -->
-    <!-- </div> -->
-
-<!-- <flowise-fullchatbot></flowise-fullchatbot>
-
-<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/gh/Digiinteracts/FlowiseChatEmbed/dist/web.js"
-    Chatbot.initFull({
-        chatflowid: "4af5354d-7569-4dea-b09f-1462a3ab6408",
-        apiHost: "https://mmade-flowisemasterymade.hf.space",
-    })
-</script> -->
-
 <flowise-fullchatbot></flowise-fullchatbot>
 <script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/gh/Digiinteracts/FlowiseChatEmbed/dist/web.js"
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
     Chatbot.initFull({
         chatflowid: "4af5354d-7569-4dea-b09f-1462a3ab6408",
         apiHost: "https://mmade-flowisemasterymade.hf.space",
         theme: {
             chatWindow: {
-                welcomeMessage: "Hey I am Sammy , You can either ask questions about the provided content or request a rewrite of it !",
+                welcomeMessage: "Hello! This is custom welcome message",
                 backgroundColor: "#ffffff",
                 height: 700,
                 width: 400,
@@ -40,7 +16,7 @@
                     backgroundColor: "#f7f8ff",
                     textColor: "#303235",
                     showAvatar: true,
-                    avatarSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgyW6PZR_OPtl-tcPg6e3L2D06AbLefr8eXw&s",
+                    avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png",
                 },
                 userMessage: {
                     backgroundColor: "#3B81F6",
@@ -58,9 +34,3 @@
         }
     })
 </script>
-
-
-
-</body>
-</html>
-
